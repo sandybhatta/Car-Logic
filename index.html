@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<!-- 
+    3 section will be there 
+    1>score
+    2>start screen of instruction
+    3>game Area
+
+ -->
+
+<div class="game">
+    <div class="startScreen">
+        <div class="instruction">
+            <p>click <i class='bx bxs-up-arrow'></i> to move up</p>
+            <p>click <i class='bx bxs-down-arrow'></i> to move down</p>
+            <p>click <i class='bx bxs-right-arrow'></i> to move right</p>
+            <p>click <i class='bx bxs-left-arrow'></i> to move left</p>
+            <p class="clickHere">click  here to start</p>
+        </div>
+    </div>
+
+    <div class="score">
+        <div class="scoreCard">score : <span id="scoreCurrent"></span></div>
+    <div class="health"><i class='bx bxs-heart' style='color:#ff000e'  >:</i> 
+            <span id="healthScore">
+                <i class='bx bxs-heart' style='color:#ff000e'  ></i>
+                <i class='bx bxs-heart' style='color:#ff000e'  ></i> 
+                <i class='bx bxs-heart' style='color:#ff000e'  ></i> 
+            </span>
+    </div>
+        <div class="scoreCard">Maximum Score : <span id="scoreHighest"></span></div>
+    </div>
+
+    <div class="gameArea hide"></div>
+</div>
+
+<script src="./app.js"></script>
+</body>
+
+</html>
